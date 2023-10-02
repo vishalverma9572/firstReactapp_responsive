@@ -1,0 +1,87 @@
+git config --global name "vishal" set author names
+
+git config --global email "vishal"
+
+git status
+
+git init initiate .git folder which tracks 
+
+git add --a staging of all
+
+git add text.txt
+
+git commit -m "" commit eith message
+
+touch .gitignore creates newfile or folder
+touch new.txt
+touch logfolder/
+
+cd ..  
+
+ls list directories inside this directory 
+
+cd /logfolder
+
+.gitignore
+xyz.txt
+*.log ignores ever .log file
+logfolder/ ingores every logfolder 
+/logfolder/ ignores only current directory log folder
+
+git diff will compare working directory with staging area
+
+git diff --staged compares courrent staged area with previous commit
+
+git commit -a -m "this direct commit all tracked file not the untracked file"
+Ctrl+c to stop cloning etc
+
+git rm third.txt this will delete third.txt as well as staged it now you just commit
+
+git mv first.txt second.txt it will rename first to second
+
+Jab ham tracked file ko gitignore me dalenge to bhi git usko track karta rahega
+so we have to tell ki ab is file ko track mat karo
+->
+git rm --cached first.txt
+ 
+
+q dabake exit
+
+git log -p se ye hame sare commit me diff dikhayega
+
+git log -p -3 me bas 3 commit me diff dikhayega
+
+git log --stat will show us diff in short 
+
+git log --pretty=oneline will show us all commits with message
+
+git log --pretty=short will show us all commit with message and commitor and author
+
+Author is who jinhone banaya repository
+Commitor wo jinhone commit kiya
+
+git log --since=2.days it will show commits in last two days
+
+git log --pretty:format:"%h --%an"
+
+git commit --amend add to last commit and you can change msg and commit the current changes also
+
+There will apen a vim editor press i to edit
+Sanse Niche insert likha ayega now you can edit
+After edit to save press esc button and press colun(shift+semin colun)
+Write
+:wq and press enter
+
+git restore --staged filename to unstage the file
+
+git checkout -- first.txt undo all the changes till last commit for that file it can't affect.gitignore
+git checkout -f go back to last commit undoing all the changes including 
+
+git remote means ek wesite ya repository
+
+git remote add origin https:/
+
+git remote -v shows whhere to push where to pull
+
+git push -u origin master will push the changes to the remote
+If it shows you error add sdh key to github
