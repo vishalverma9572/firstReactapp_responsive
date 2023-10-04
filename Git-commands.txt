@@ -95,7 +95,7 @@ git config --global alias.ci commit
 Now git cu will work as git commit
 
 git config --global alias.unstage 'restore --staged-- '
-git unstage this.txt
+to set git unstage this.txt
 
 
 
@@ -146,4 +146,4 @@ if you want to rename at the time push
 git push origin oldname:newname
 
 git push -d origin branchname it will delete the branch at remote
-
+ git pull The git pull command is used to fetch the latest changes from a remote repository and integrate them into your current branch. Essentially, it combines two Git commands: git fetch and git merge (or git rebase, depending on your Git configuration).
