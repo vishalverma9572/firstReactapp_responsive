@@ -85,3 +85,65 @@ git remote -v shows whhere to push where to pull
 
 git push -u origin master will push the changes to the remote
 If it shows you error add sdh key to github
+
+Alias means command ko chhote me likhna
+
+git config --global alias.st status
+ Now git st eill work as git status
+
+git config --global alias.ci commit
+Now git cu will work as git commit
+
+git config --global alias.unstage 'restore --staged-- '
+git unstage this.txt
+
+
+
+
+git checkout -b newbrnch create new branch snd go to that branch
+
+Now you are in newbrnch
+Now if you want to go to master
+git checkout master
+If you delete anything in branch that is ignored in master that will not restore if you will switch to master
+
+git branch will show how name branches are there
+before switching you should always commit the sit
+
+git merge newbrnch 
+
+deal merge conflict
+
+git branch -v it will show
+Commit hash commit message 
+
+git branch --merged
+show already merged branches
+git branch --no-merged sow not merged branches
+
+Deleting branches
+git branch -d develope 
+gives error if develope is not mergerd
+git branch -D develope 
+Not gives error if not merged
+
+Branching workflow  
+Log running branches 
+Master 
+Develop
+PU
+
+Topic branches
+If you have any issues you create and solve it
+Merge it and delete it
+
+git push generaly only push master branch if you want to explicitly push any other branch 
+
+Go to that branch
+git push origin branchname
+
+if you want to rename at the time push
+git push origin oldname:newname
+
+git push -d origin branchname it will delete the branch at remote
+
